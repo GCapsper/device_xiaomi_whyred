@@ -25,26 +25,22 @@ $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 # Inherit from whyred device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# CherishOS Properties
+# Crdroid Properties
 TARGET_INCLUDE_WIFI_EXT := false
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_INCLUDE_STOCK_ARCORE := false
-CHERISH_BUILD_TYPE := OFFICIAL
 WITH_GAPPS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BUILD_GRAPHENEOS_CAMERA := false
 
-# Maintainer Prop
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=P.M.SALMAN_KHAN
 
 # Device Specfic
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := cherish_whyred
+PRODUCT_NAME := lineage_whyred
 PRODUCT_MODEL := Redmi Note 5
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
